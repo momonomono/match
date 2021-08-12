@@ -1,0 +1,12 @@
+.l-form-container{
+    width:50%;
+    margin:0 auto;
+
+    @include mq(){
+        width:95%;
+    }
+}
+
+.l-header{
+    width:100%;
+}

@@ -1,0 +1,26 @@
+$color-bg__main : #f0f0f0;
+$color-bg__inputBox : #fff;
+$color-bg__primary : #3666dd;
+$color-bg__secondary : #88ccff;
+$color-bg__third : #5a7dd6;
+$color-bg__errBox : #ffb8b8;
+
+
+$color-border__form : #e0e0e0;
+$color-border__err : #ff0000;
+$color-border__header : #6a8bdf;
+$color-border__primary : #3666dd;
+$color-border__secondary : #88ccff;
+
+$color-font__errMsg : #ff0000;
+$color-font__button : #fff;
+$color-font__header : #fff;
+$color-font__primary : #3666dd;
+$color-font__secondary : #88ccff;
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 400px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;

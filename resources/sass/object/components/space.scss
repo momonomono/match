@@ -1,0 +1,8 @@
+.c-space{
+    width:0px;
+
+    @include mq(){
+        width:100%;
+        height:50px;
+    }
+}

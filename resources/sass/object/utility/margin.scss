@@ -1,0 +1,5 @@
+@for $value from 1 through 10{
+    .u-mb-#{$value * 10}{
+        margin-bottom:10px * $value;
+    }
+}
