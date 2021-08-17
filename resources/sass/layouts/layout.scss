@@ -1,4 +1,17 @@
-.l-form{
+.l-form__container{
+    width:50%;
+    margin:0 auto;
+
+    @include mq(){
+        width:30%;
+    }
+}
+
+.l-header{
+    width:100%;
+}
+
+.l-mail{
     width:50%;
     margin:0 auto;
 }

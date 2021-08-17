@@ -1,12 +1,12 @@
-@extends ('layouts.layout')
+@extends('layouts.layout')
 
-@section('title','ログイン')
+@section('title','パスワード再設定')
 
 @section('body')
     <div>
-        <reminder-component
+        <check-hashkey-component
             :err-msg = "{{ $errors }}"
             :old = "{{ json_encode(Session::getOldInput()) }}"
-        ></reminder-component>
+        ></check-hashkey-component>
     </div>
 @endsection

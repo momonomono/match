@@ -7,7 +7,7 @@
 
                     <h2 class="p-form__title">ログイン</h2>
 
-                    <div class="p-form__errBox">
+                    <div class="p-form__errBox" v-show="showMessage">
                         <p class="p-form__falseMsg" v-show="showMessage">メールアドレスかパスワードが違います</p>
                     </div>
 

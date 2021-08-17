@@ -1,19 +1,27 @@
 .p-form{
-    background:$color-bg__main;
     padding:50px 0;
     margin:50px auto;
-    border:3px solid $color-border__form;
     max-width:700px;
+
+    @include mq(){
+       width:90%;
+       margin:0 auto;
+       padding:30px 0;
+    }
 
     &__title{
         font-size:30px;
         margin-bottom:30px;
         color:$color-font__primary;
         user-select: none;
+
+        @include mq(){
+            margin-bottom:10px;
+        }
     }
 
     &__container{
-        width:60%;
+        width:100%;
         margin:0 auto;
         max-width:450px;
     }
@@ -32,7 +40,7 @@
 
     &__input{
         font-size:24px;
-        height:35px;
+        height:40px;
         width:100%;
     }
 
@@ -83,6 +91,6 @@
     }
 
     &__reminder{
-        text-align: right;
+        float:right;
     }
 }

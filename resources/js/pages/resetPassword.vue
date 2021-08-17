@@ -8,13 +8,19 @@
                     <h2 class="p-form__title">パスワード再設定</h2>
 
                     <FormLabel 
-                        title = "メールアドレス"
-                        formName = "email"
-                        :errMsg = "errMsg['email']"
+                        title = "パスワード"
+                        formName = "password"
+                        :errMsg = "errMsg['password']"
                         :value = "oldEmail"
                     />
 
-                    <button class="p-form__button c-button__form">
+                    <FormLabel 
+                        title = "パスワード（ 確認 ）"
+                        formName = "password_confirmation"
+                        :value = "oldEmail"
+                    />
+
+                    <button class="p-form__button c-button__form" href="">
                         送信
                     </button>
                 </form>

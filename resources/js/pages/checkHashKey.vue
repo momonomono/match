@@ -5,12 +5,19 @@
                 <form method="post">
                     <input type="hidden" name="_token" :value="csrf">
                     
-                    <h2 class="p-form__title">パスワード再設定</h2>
+                    <h2 class="p-form__title">認証キー入力</h2>
 
                     <FormLabel 
                         title = "メールアドレス"
                         formName = "email"
                         :errMsg = "errMsg['email']"
+                        :value = "oldEmail"
+                    />
+
+                    <FormLabel 
+                        title = "認証キー"
+                        formName = "hashKey"
+                        :errMsg = "errMsg['hashKey']"
                         :value = "oldEmail"
                     />
 
@@ -47,3 +54,4 @@
         }
     }
 </script>
+</template>

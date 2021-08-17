@@ -11,14 +11,16 @@ class ReminderMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $content;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($content)
     {
-        //
+        $this->content = $content;
     }
 
     /**
@@ -31,6 +33,7 @@ class ReminderMail extends Mailable
         return $this
             ->from('momonomono1128@gmail.com')
             ->subject('テスト送信')
-            ->view('mail.reminder');
+            ->markdown('mail.reminder')
+            ->with(['content' => $this->content]);
     }
 }

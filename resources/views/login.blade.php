@@ -4,9 +4,10 @@
 
 @section('body')
     <div>
-        <reminder-component
+        <login-component 
             :err-msg = "{{ $errors }}"
             :old = "{{ json_encode(Session::getOldInput()) }}"
-        ></reminder-component>
+            :show-message = "{{ session('showMessage') ? 'true' : 'false' }}"
+        ></login-component>
     </div>
 @endsection

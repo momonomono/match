@@ -1,12 +1,12 @@
 @extends ('layouts.layout')
 
-@section('title','ログイン')
+@section('title','ユーザー登録')
 
 @section('body')
     <div>
-        <reminder-component
+        <signup-component 
             :err-msg = "{{ $errors }}"
             :old = "{{ json_encode(Session::getOldInput()) }}"
-        ></reminder-component>
+        ></signup-component>
     </div>
 @endsection
