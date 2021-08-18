@@ -7,10 +7,9 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReminderMail extends Mailable
+class ResetPasswordMail extends Mailable
 {
     use Queueable, SerializesModels;
-
     protected $content;
 
     /**
@@ -32,8 +31,8 @@ class ReminderMail extends Mailable
     {
         return $this
             ->from('momonomono1128@gmail.com')
-            ->subject('テスト送信')
-            ->view('mail.reminder')
+            ->subject('パスワード再発行認証')
+            ->view('mail.markdown_mail')
             ->with(['content' => $this->content]);
     }
 }

@@ -9,6 +9,7 @@
         .l-mail {
             width: 50%;
             margin: 0 auto;
+            padding:50px 0;
         }
 
         .p-mail {
@@ -41,6 +42,7 @@
 
         .p-mail__hashKey {
             margin-bottom: 20px;
+            text-align: center;
         }
 
 
@@ -58,12 +60,12 @@
             box-shadow: 2px 2px;
         }
 
-        .p-mail__link {
+        .p-mail__button a{
             display: block;
-            width: 100%;
-            height: 100%;
+            color:#ffffff;
             text-decoration: none;
-            color: inherit;
+            width:100%;
+            height:100%;
         }
     </style>
 
@@ -88,7 +90,9 @@
             <section class="p-mail__reset">
                 <p class="p-mail__hashKey">認証キー : {{ $content['hashKey']}}</p>
 
-                <input type="button" class="p-mail__button" value="パスワードリセット" id="js-click-button">
+                <button class="p-mail__button">
+                    <a href="{{ route('hashKey') }}">パスワードリセット</a>
+                </button>
             </section>
         </section>
 

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use App\Mail\ReminderMail;
+use App\Mail\ResetPasswordMail;
 use App\User;
 use App\PasswordReset;
 use Carbon\Carbon;
@@ -54,7 +55,7 @@ class ReminderController extends Controller
             ];
 
             // メール送信
-            Mail::to($email)->send(new ReminderMail($content));
+            Mail::to($email)->send(new ResetPasswordMail($content));
         }
 
         return redirect('/reminder/hashKey');
