@@ -29,8 +29,11 @@ Route::group(['middleware' => 'guest'], function() {
     Route::post('/signup','SignupController@postSignup')->name('postSignup');
 });
 
-Route::get('/mypage','MainController@mypage')->name('mypage');
-Route::get('/logout','MainController@logout')->name('logout');
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/mypage','MainController@mypage')->name('mypage');
+    Route::get('/logout','MainController@logout')->name('logout');
+    
+});
 
 Route::get('/test','TestController@top')->name('test');
 Route::post('/test','TestController@post')->name('posttest');

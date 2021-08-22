@@ -481,6 +481,11 @@ template {
   margin: 0 auto;
 }
 
+.l-breadcrumb {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .c-button__form {
   background: #3666dd;
   color: #fff;
@@ -528,6 +533,20 @@ template {
 .p-accordion__item:hover {
   background: #5a7dd6;
   opacity: 0.8;
+}
+
+.p-breadcrumb {
+  background: #f0f0f0;
+  width: 100%;
+  height: 50px;
+}
+.p-breadcrumb__container {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.p-breadcrumb__item {
+  margin-right: 20px;
 }
 
 .p-form {

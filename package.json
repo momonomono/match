@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "webpack",
-        "watch": "npm run dev -- --watch"
+        "watch": "npm run dev -- --watch",
+        "serve" : "php artisan serve --port=9999"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.15.0",
