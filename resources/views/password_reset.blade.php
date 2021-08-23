@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title','パスワード再設定')
+@section('title','認証キー入力')
 
 @section('body')
     <div>

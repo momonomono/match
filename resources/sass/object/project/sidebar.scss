@@ -1,0 +1,18 @@
+.p-sidebar{
+    width:20%;
+    height:700px;
+    background:$color-bg__primary;
+
+    &__container{
+        width:80%;
+        margin:0 auto;
+        text-align: center;
+        padding:50px 0;
+    }
+
+    &__item{
+        margin-bottom:50px;
+        color:$color-font__main;
+        font-size:20px;
+    }
+}

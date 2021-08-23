@@ -1,6 +1,6 @@
 @if (count($breadcrumbs))
 <div class="p-breadcrumb">
-    <div class="l-breadcrumb">
+    <div class="l-main">
 
         <ul class="p-breadcrumb__container">
             @foreach ($breadcrumbs as $breadcrumb)

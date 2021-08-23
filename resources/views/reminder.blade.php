@@ -1,6 +1,6 @@
 @extends ('layouts.layout')
 
-@section('title','ログイン')
+@section('title','パスワードリマインダー')
 
 @section('body')
     <div>
