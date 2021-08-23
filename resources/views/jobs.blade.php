@@ -1,6 +1,6 @@
 @extends ('layouts.layout')
 
-@section('title','案件登録')
+@section('title','案件一覧')
 
 @section('breadcrumb',Breadcrumbs::render('jobs'))
 

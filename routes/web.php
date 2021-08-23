@@ -32,7 +32,12 @@ Route::group(['middleware' => 'guest'], function() {
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/mypage','MainController@mypage')->name('mypage');
     Route::get('/logout','MainController@logout')->name('logout');
-    
+
+    Route::get('/jobs','MainController@jobs')->name('jobs');
+    Route::get('/jobs/post','MainController@jobPost')->name('jobs.post');
+
+    Route::get('/message/public','MainController@messagePublic')->name('message.public');
+    Route::get('/message/private','MainController@messagePrivate')->name('message.private');
 });
 
 Route::get('/test','TestController@top')->name('test');
