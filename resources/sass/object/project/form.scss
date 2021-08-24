@@ -10,10 +10,8 @@
     }
 
     &__title{
-        font-size:30px;
         margin-bottom:30px;
         color:$color-font__primary;
-        user-select: none;
 
         @include mq(){
             margin-bottom:10px;
@@ -67,26 +65,10 @@
     }
 
     &__errMsg{
-        color:$color-font__errMsg;
-        height:30px;
-        display:flex;
-        align-items: center;
-    }
-
-    &__errBox{
-        width:100%;
-        height:30px;
-        margin-bottom:10px;
-    }
-
-    &__falseMsg{
-        width:100%;
-        height:30px;
-        display:flex;
-        border-radius: 5px;
         background:$color-bg__errBox;
-        color:$color-font__errMsg;
-        align-items: center;
+        border-radius: 5px;
+        padding:20px 0;
+        display:flex;
         justify-content: center;
     }
 

@@ -462,12 +462,12 @@ template {
   display: none;
 }
 
-.l-form__container {
+.l-container {
   width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  .l-form__container {
+  .l-container {
     width: 30%;
   }
 }
@@ -477,11 +477,6 @@ template {
 }
 
 .l-mail {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.l-breadcrumb {
   width: 50%;
   margin: 0 auto;
 }
@@ -497,6 +492,13 @@ template {
   text-align: center;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.c-grid__errMsg {
+  color: #ff0000;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .c-input__form {
@@ -523,6 +525,11 @@ template {
     width: 100%;
     height: 50px;
   }
+}
+
+.c-text__title {
+  font-size: 30px;
+  user-select: none;
 }
 
 .p-accordion {
@@ -571,10 +578,8 @@ template {
   }
 }
 .p-form__title {
-  font-size: 30px;
   margin-bottom: 30px;
   color: #3666dd;
-  user-select: none;
 }
 @media screen and (max-width: 768px) {
   .p-form__title {
@@ -622,24 +627,10 @@ template {
   }
 }
 .p-form__errMsg {
-  color: #ff0000;
-  height: 30px;
-  display: flex;
-  align-items: center;
-}
-.p-form__errBox {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 10px;
-}
-.p-form__falseMsg {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  border-radius: 5px;
   background: #ffb8b8;
-  color: #ff0000;
-  align-items: center;
+  border-radius: 5px;
+  padding: 20px 0;
+  display: flex;
   justify-content: center;
 }
 .p-form__reminder {
@@ -842,4 +833,8 @@ template {
 
 .u-mb-100 {
   margin-bottom: 100px;
+}
+
+.u-text-center {
+  text-align: center;
 }

@@ -1,14 +1,14 @@
 <template>
-    <div class="l-form-container">
+    <div class="l-container">
         <section class="p-form">
             <div class="p-form__container">
                 <form method="post" class="u-mb-40">
                     <input type="hidden" name="_token" :value="csrf">
 
-                    <h2 class="p-form__title">ログイン</h2>
+                    <h1 class="p-form__title c-text__title">ログイン</h1>
 
-                    <div class="p-form__errBox" v-show="showMessage">
-                        <p class="p-form__falseMsg" v-show="showMessage">メールアドレスかパスワードが違います</p>
+                    <div class="c-grid__errMsg p-form__errMsg u-mb-20" v-show="showMessage">
+                        <p>メールアドレスかパスワードが違います</p>
                     </div>
 
                     <!-- メールアドレス -->

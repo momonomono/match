@@ -14,11 +14,6 @@ Breadcrumbs::for('job_post', function ($trail) {
     $trail->push('案件投稿', route('mypage'));
 });
 
-Breadcrumbs::for('job_post', function ($trail) {
-    $trail->parent('jobs');
-    $trail->push('案件投稿', route('mypage'));
-});
-
 Breadcrumbs::for('job_fix', function ($trail) {
     $trail->parent('jobs');
     $trail->push('案件修正', route('mypage'));

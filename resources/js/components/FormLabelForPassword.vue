@@ -7,7 +7,9 @@
       :class="changeBorderErrInputbox"
       :name="formName"
     />
-    <p class="p-form__errMsg">{{ errText }}</p>
+    <div class="c-grid__errMsg">
+        <p>{{ errText }}</p>
+    </div>
   </label>
 </template>
 

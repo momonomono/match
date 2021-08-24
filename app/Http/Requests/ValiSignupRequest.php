@@ -13,6 +13,9 @@ class ValiSignupRequest extends FormRequest
      */
     public function authorize()
     {
+        if($this->path() == "signup"){
+            return true;
+        }
         return false;
     }
 
@@ -24,7 +27,8 @@ class ValiSignupRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'email' => 'required | email | string ',
+            'password' => 'required | max:255 | string | confirmed',
         ];
     }
 }

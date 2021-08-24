@@ -1,12 +1,12 @@
 <template>
-    <div class="l-form-container">
+    <div class="l-container">
         <section class="p-form">
             <div class="p-form__container">
                 <form method="post">
 
                     <input type="hidden" name="_token" :value="csrf">
 
-                    <h2 class="p-form__title">ユーザー登録</h2>
+                    <h1 class="p-form__title c-text__title">ユーザー登録</h1>
 
                     <FormLabel
                         title = "メールアドレス"

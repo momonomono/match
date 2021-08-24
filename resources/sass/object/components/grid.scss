@@ -1,0 +1,9 @@
+.c-grid{
+
+    &__errMsg{
+        color:$color-font__errMsg;
+        height:30px;
+        display:flex;
+        align-items: center;
+    }
+}
