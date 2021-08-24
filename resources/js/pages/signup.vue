@@ -8,6 +8,10 @@
 
                     <h1 class="p-form__title c-text__title">ユーザー登録</h1>
 
+                    <div class="c-grid__errMsg p-form__errMsg u-mb-20" v-show="showMessage">
+                        <p>入力されたメールアドレスは既に使われています</p>
+                    </div>
+
                     <FormLabel
                         title = "メールアドレス"
                         formName = "email"
@@ -48,6 +52,9 @@ export default {
     old: {
       required: false,
     },
+    showMessage:{
+      required : false
+    }
   },
   data: function () {
     return {

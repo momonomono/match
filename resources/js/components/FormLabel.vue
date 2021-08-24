@@ -1,7 +1,7 @@
 <template>
 
-  <label class="p-form__label">
-        <p class="p-form__text">{{ title }}</p>
+  <label class="c-grid__label u-mb-10">
+        <p class="c-text__label u-mb-10">{{ title }}</p>
         <input
             class = "p-form__input c-input__form"
             type = "text"

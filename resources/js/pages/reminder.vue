@@ -5,7 +5,7 @@
                 <form method="post">
                     <input type="hidden" name="_token" :value="csrf">
                     
-                    <h2 class="p-form__title">パスワード再設定</h2>
+                    <h2 class="p-form__title c-text__title">パスワード再設定</h2>
 
                     <FormLabel 
                         title = "メールアドレス"

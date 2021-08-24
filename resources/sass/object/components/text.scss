@@ -1,9 +1,12 @@
 .c-text{
+    
+    &__label{
+        font-size:20px;
+        user-select:none;
+    }
 
     &__title{
         font-size:30px;
         user-select: none;
     }
-
-    
 }

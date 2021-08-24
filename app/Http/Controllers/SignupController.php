@@ -17,6 +17,13 @@ class SignupController extends Controller
     }
 
     public function postSignup(ValiSignupRequest $request){
+        $email = $request -> input('email');
+        $checkExistEmail = User::where('email',$email)->get();
+        
+        if(!is_null($checkExistEmail)){
+
+            return redirect('signup')->with('showMessage',true);
+        }
 
         User::create([
             'email' => $request->input('email'),

@@ -500,6 +500,9 @@ template {
   display: flex;
   align-items: center;
 }
+.c-grid__label {
+  display: block;
+}
 
 .c-input__form {
   background: #fff;
@@ -527,6 +530,10 @@ template {
   }
 }
 
+.c-text__label {
+  font-size: 20px;
+  user-select: none;
+}
 .c-text__title {
   font-size: 30px;
   user-select: none;
@@ -590,11 +597,6 @@ template {
   width: 100%;
   margin: 0 auto;
   max-width: 450px;
-}
-.p-form__label {
-  display: block;
-  margin-bottom: 10px;
-  position: relative;
 }
 .p-form__text {
   font-size: 20px;
