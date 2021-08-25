@@ -2,7 +2,7 @@
   <label class="c-grid__label u-mb-10">
     <p class="c-text__label u-mb-10">{{ title }}</p>
     <input
-      class="p-form__input c-input__form"
+      class="p-form__input c-input__text"
       type="password"
       :class="changeBorderErrInputbox"
       :name="formName"
