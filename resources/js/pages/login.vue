@@ -17,13 +17,15 @@
                         formName = "email"
                         :errMsg = "errMsg['email'] "
                         :value = "oldEmail"
+                        :formType = "text"
                     />
 
                     <!-- パスワード -->
-                    <FormLabelForPassword
+                    <FormLabel
                         title = "パスワード"
                         formName = "password"
                         :errMsg = "errMsg['password']"
+                        :formType = "password"
                     />
 
                     <div class="p-form__loginSave u-mb-50">

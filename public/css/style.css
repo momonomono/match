@@ -504,7 +504,7 @@ template {
   display: block;
 }
 
-.c-input__form {
+.c-input__text {
   background: #fff;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid #e0e0e0;
