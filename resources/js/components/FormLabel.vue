@@ -30,6 +30,10 @@
             errMsg :{
                 required :false
             },
+            formType:{
+                type : String,
+                reuqired : true
+            },
             value :{
                 required :false
             }
