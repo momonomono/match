@@ -1,0 +1,13 @@
+@for $value from 1 through 10{
+    .u-mb-#{$value * 10}{
+        margin-bottom:10px * $value;
+    }
+
+    .u-mu-#{$value * 10}{
+        margin-top:10px * $value;
+    }
+
+    .u-pt-#{$value * 10}{
+        padding-top:10px * $value;
+    }
+}

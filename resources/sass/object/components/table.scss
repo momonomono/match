@@ -1,0 +1,14 @@
+.c-table{
+    width:100%;
+
+    &__row{
+        
+    }
+
+    &__header{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:40px;
+    }
+}

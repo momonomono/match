@@ -14,15 +14,16 @@
                     <!-- メールアドレス -->
                     <FormLabel
                         title = "メールアドレス"
+                        formType = "text"
                         formName = "email"
                         :errMsg = "errMsg['email'] "
                         :value = "oldEmail"
-                        :formType = "text"
                     />
 
                     <!-- パスワード -->
-                    <FormLabelForPassword
+                    <FormLabel
                         title = "パスワード"
+                        formType = "password"
                         formName = "password"
                         :errMsg = "errMsg['password']"
                     />
@@ -50,7 +51,6 @@
 
 <script>
     import FormLabel from "../components/FormLabel.vue";
-    import FormLabelForPassword from "../components/FormLabelForPassword";
 
     export default{
         props :{
@@ -73,7 +73,6 @@
         },
         components :{
             FormLabel,
-            FormLabelForPassword
         }
     }
 </script>
