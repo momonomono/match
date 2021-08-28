@@ -5,7 +5,5 @@
 @section('breadcrumb',Breadcrumbs::render('job_post'))
 
 @section('body')
-    <div class="l-container">
-        
-    </div>
+    <jobpost-component></jobpost-component>
 @endsection

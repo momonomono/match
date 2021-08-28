@@ -7,7 +7,12 @@
         align-items: center;
     }
 
+    &__jobpost{
+        display:flex;
+        align-items: center;
+    }
+
     &__label{
-        display:block;
+        display:flex;
     }
 }

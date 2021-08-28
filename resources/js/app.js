@@ -21,12 +21,15 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('header-component',require('./components/Header.vue').default);
+
+
 Vue.component('login-component',require("./pages/login.vue").default);
 Vue.component('signup-component',require('./pages/signup.vue').default);
 Vue.component('mypage-component',require('./pages/mypage.vue').default);
 Vue.component('reminder-component',require('./pages/reminder.vue').default);
 Vue.component('check-hashkey-component',require('./pages/checkHashKey.vue').default);
 Vue.component('reset-password-component',require('./pages/resetPassword.vue').default);
+Vue.component('jobpost-component',require('./pages/jobPost.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -468,7 +468,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .l-container {
-    width: 30%;
+    width: 90%;
   }
 }
 
@@ -500,11 +500,23 @@ template {
   display: flex;
   align-items: center;
 }
+.c-grid__jobpost {
+  display: flex;
+  align-items: center;
+}
 .c-grid__label {
-  display: block;
+  display: flex;
 }
 
 .c-input__text {
+  background: #fff;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.2);
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.c-input__number {
   background: #fff;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid #e0e0e0;
@@ -530,7 +542,21 @@ template {
   }
 }
 
+.c-table {
+  width: 100%;
+}
+.c-table__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
 .c-text__label {
+  font-size: 20px;
+  user-select: none;
+}
+.c-text__section {
   font-size: 20px;
   user-select: none;
 }
@@ -693,6 +719,62 @@ template {
   }
 }
 
+.p-jobpost {
+  margin: 100px 0;
+}
+.p-jobpost__input {
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  max-width: 500px;
+}
+.p-jobpost__number {
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  max-width: 200px;
+}
+.p-jobpost__textarea {
+  width: 100%;
+  height: 200px;
+}
+.p-jobpost__section {
+  justify-content: space-between;
+}
+.p-jobpost__content {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+.p-jobpost__label {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.p-jobpost__title {
+  font-size: 24px;
+  color: #9f9f9f;
+}
+.p-jobpost__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.p-jobpost__button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .p-jobpost__button {
+    width: 100%;
+  }
+}
+
 .p-mail {
   margin: 50px 0;
 }
@@ -801,42 +883,130 @@ template {
   margin-bottom: 10px;
 }
 
+.u-mu-10 {
+  margin-top: 10px;
+}
+
+.u-pt-10 {
+  padding-top: 10px;
+}
+
 .u-mb-20 {
   margin-bottom: 20px;
+}
+
+.u-mu-20 {
+  margin-top: 20px;
+}
+
+.u-pt-20 {
+  padding-top: 20px;
 }
 
 .u-mb-30 {
   margin-bottom: 30px;
 }
 
+.u-mu-30 {
+  margin-top: 30px;
+}
+
+.u-pt-30 {
+  padding-top: 30px;
+}
+
 .u-mb-40 {
   margin-bottom: 40px;
+}
+
+.u-mu-40 {
+  margin-top: 40px;
+}
+
+.u-pt-40 {
+  padding-top: 40px;
 }
 
 .u-mb-50 {
   margin-bottom: 50px;
 }
 
+.u-mu-50 {
+  margin-top: 50px;
+}
+
+.u-pt-50 {
+  padding-top: 50px;
+}
+
 .u-mb-60 {
   margin-bottom: 60px;
+}
+
+.u-mu-60 {
+  margin-top: 60px;
+}
+
+.u-pt-60 {
+  padding-top: 60px;
 }
 
 .u-mb-70 {
   margin-bottom: 70px;
 }
 
+.u-mu-70 {
+  margin-top: 70px;
+}
+
+.u-pt-70 {
+  padding-top: 70px;
+}
+
 .u-mb-80 {
   margin-bottom: 80px;
+}
+
+.u-mu-80 {
+  margin-top: 80px;
+}
+
+.u-pt-80 {
+  padding-top: 80px;
 }
 
 .u-mb-90 {
   margin-bottom: 90px;
 }
 
+.u-mu-90 {
+  margin-top: 90px;
+}
+
+.u-pt-90 {
+  padding-top: 90px;
+}
+
 .u-mb-100 {
   margin-bottom: 100px;
 }
 
+.u-mu-100 {
+  margin-top: 100px;
+}
+
+.u-pt-100 {
+  padding-top: 100px;
+}
+
 .u-text-center {
   text-align: center;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-bg-red {
+  background-color: red;
 }

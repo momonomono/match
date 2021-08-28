@@ -6,7 +6,9 @@
 
                     <input type="hidden" name="_token" :value="csrf">
 
-                    <h1 class="p-form__title c-text__title">ユーザー登録</h1>
+                    <h1 class="p-form__title c-text__title">
+                      ユーザー登録
+                    </h1>
 
                     <div class="c-grid__errMsg p-form__errMsg u-mb-20" v-show="showMessage">
                         <p>入力されたメールアドレスは既に使われています</p>
@@ -19,15 +21,17 @@
                         :value = "oldEmail"
                     />
 
-                    <FormLabelForPassword
+                    <FormLabel
                         title = "パスワード"
                         formName = "password"
+                        formType = "password"
                         :errMsg = "errMsg['password']"
                     />
 
-                    <FormLabelForPassword
+                    <FormLabel
                         title = "パスワード(確認)"
                         formName = "password_confirmation"
+                        formType = "password"
                     />
 
                     <button class="p-form__button c-button__form">
@@ -42,7 +46,6 @@
 
 <script>
 import FormLabel from "../components/FormLabel.vue";
-import FormLabelForPassword from "../components/FormLabelForPassword.vue";
 
 export default {
   props: {
@@ -66,7 +69,6 @@ export default {
   },
   components: {
     FormLabel,
-    FormLabelForPassword,
   },
 };
 </script>

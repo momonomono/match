@@ -9,6 +9,15 @@
         box-sizing: border-box;
     }
 
+    &__number{
+        background:$color-bg__inputBox;
+        box-shadow: inset 1px 1px rgba(0,0,0,0.2);
+        border:2px solid $color-border__form;
+        border-radius: 5px;
+        padding-left:15px;
+        box-sizing: border-box;
+    }
+
     &__checkBox{
         border:2px solid #e0e0e0;
         box-shadow: inset 1px 1px rgba(0,0,0,0.2);
