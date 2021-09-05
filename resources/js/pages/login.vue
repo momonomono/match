@@ -21,7 +21,7 @@
                     />
 
                     <!-- パスワード -->
-                    <FormLabelForPassword
+                    <FormLabel
                         title = "パスワード"
                         formType = "password"
                         formName = "password"

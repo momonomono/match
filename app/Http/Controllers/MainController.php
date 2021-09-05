@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\ValiJobPostRequest;
 
 class MainController extends Controller
 {
@@ -17,8 +18,16 @@ class MainController extends Controller
         return view('jobs');
     }
 
+
+    // 案件投稿
     public function jobPost(){
 
+        return view('job_post');
+    }
+
+    public function postJobPost(ValiJobPostRequest $request){
+
+        
         return view('job_post');
     }
 

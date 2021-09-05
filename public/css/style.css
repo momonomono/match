@@ -500,10 +500,6 @@ template {
   display: flex;
   align-items: center;
 }
-.c-grid__jobpost {
-  display: flex;
-  align-items: center;
-}
 .c-grid__label {
   display: flex;
 }
@@ -726,7 +722,6 @@ template {
   width: 100%;
   height: 40px;
   font-size: 24px;
-  max-width: 500px;
 }
 .p-jobpost__number {
   width: 100%;
@@ -738,13 +733,8 @@ template {
   width: 100%;
   height: 200px;
 }
-.p-jobpost__section {
-  justify-content: space-between;
-}
 .p-jobpost__content {
   display: flex;
-  width: 100%;
-  max-width: 500px;
 }
 .p-jobpost__label {
   font-size: 18px;
@@ -756,11 +746,16 @@ template {
   font-size: 24px;
   color: #9f9f9f;
 }
-.p-jobpost__checkbox {
+.p-jobpost__radio {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.p-jobpost__radio::before {
+  content: "";
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  margin-right: 10px;
 }
 .p-jobpost__button {
   display: block;
