@@ -31,7 +31,7 @@ class ValiJobPostRequest extends FormRequest
     {
         return [
             'title' => "required | string | max:255",
-
+            'detail' => "required | string | max:255"
         ];
     }
 }

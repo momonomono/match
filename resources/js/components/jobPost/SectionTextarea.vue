@@ -1,22 +1,22 @@
 <template>
-    <section class="u-mb-20">
+    <section class="u-mb-50">
 
-        <!-- タイトル入力 -->
+        <!-- テキストエリア -->
         <div class="c-grid__jobpost">
-            <p class="p-jobpost__title u-mb-10">タイトル</p>
-            <input 
-                type="text" 
-                class="c-input__text p-jobpost__input"
-                name="title"
-                :class="changeErrText"
-            />
+
+            <p class="p-jobpost__title u-mb-20">内容</p>
+            
+            <textarea 
+                class="c-input__text p-jobpost__textarea"
+                name="detail"
+                :class = "changeErrText"
+            ></textarea>
         </div>
 
         <!-- エラーメッセージ -->
         <div class="c-grid__errMsg">
             {{ errText }}
         </div>
-
     </section>
 </template>
 
@@ -34,7 +34,6 @@
                 errText : ""
             }
         },
-        
         computed :{
             checkErrMsg(){
                 return this.errMsg.length !== 0;

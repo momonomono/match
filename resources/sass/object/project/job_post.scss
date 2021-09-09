@@ -1,5 +1,5 @@
 .p-jobpost{
-    margin:100px 0;
+    margin:50px 0;
 
     &__input{
         width:100%;
@@ -12,6 +12,11 @@
         height:40px;
         font-size:24px;
         max-width:200px;
+
+        &:disabled{
+            background:$color-bg__disable;
+            color:$color-font__disable;
+        }
     }
 
     &__textarea{
@@ -33,7 +38,15 @@
 
     &__title{
         font-size:24px;
-        color:$color-font-thirdly;
+    }
+
+    &__text{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:40px;
+        font-size:40px;
+        margin-right:40px;
     }
 
     &__radio{

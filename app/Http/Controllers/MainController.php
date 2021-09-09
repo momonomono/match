@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ValiJobPostRequest;
+use App\Job;
 
 class MainController extends Controller
 {
@@ -27,8 +28,18 @@ class MainController extends Controller
 
     public function postJobPost(ValiJobPostRequest $request){
 
+        $job = $request -> only('title','attr','detail');
+
+        if($job['attr'] == "0"){
+            $job['min_price'] = $request -> input('min_price');
+            $job['max_price'] = $request -> input('max_price');
+            var_dump($job);
+        }
+
+        Job::create($job);
+
         
-        return view('job_post');
+        return redirect('jobs');
     }
 
     

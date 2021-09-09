@@ -17,8 +17,8 @@ class CreateJobsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title',255);
             $table->unsignedBigInteger('attr')->default(0);
-            $table->integer('min_price')->default(0);
-            $table->integer('max_price')->default(0);
+            $table->integer('min_price')->nullable()->default(0);
+            $table->integer('max_price')->nullable()->default(0);
             $table->string('detail',255);
             $table->timestamp('deleted_flg')->nullable();
             $table->timestamps();

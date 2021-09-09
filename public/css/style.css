@@ -716,7 +716,7 @@ template {
 }
 
 .p-jobpost {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 .p-jobpost__input {
   width: 100%;
@@ -728,6 +728,10 @@ template {
   height: 40px;
   font-size: 24px;
   max-width: 200px;
+}
+.p-jobpost__number:disabled {
+  background: #efefef;
+  color: #afafaf;
 }
 .p-jobpost__textarea {
   width: 100%;
@@ -744,7 +748,14 @@ template {
 }
 .p-jobpost__title {
   font-size: 24px;
-  color: #9f9f9f;
+}
+.p-jobpost__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 40px;
+  margin-right: 40px;
 }
 .p-jobpost__radio {
   width: 20px;
