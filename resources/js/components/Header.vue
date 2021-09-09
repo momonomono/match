@@ -7,8 +7,8 @@
 
             <!-- ログインしている場合に表示されるナビゲーション -->
             <ul class="p-header__container" v-if="authFlg">
-                <HeaderNavItem linkName="メッセージ" link />
-                <HeaderNavItem linkName="案件" link />
+                <HeaderNavItem linkName="メッセージ" link="message" />
+                <HeaderNavItem linkName="案件" link="/jobs" />
                 <HeaderNavItem link="/mypage" linkName="マイページ" />
                 <HeaderNavItem link="/logout" linkName="ログアウト" />
             </ul>

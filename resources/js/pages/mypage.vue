@@ -10,10 +10,12 @@
 
 <script>
     import SideBar from "../components/mypage/SideBar.vue";
+    import MypageContent from "../components/mypage/MypageContent.vue";
 
     export default{
         components:{
-            SideBar
+            SideBar,
+            MypageContent
         }
     }
 </script>

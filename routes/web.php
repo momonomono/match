@@ -30,15 +30,21 @@ Route::group(['middleware' => 'guest'], function() {
 });
 
 Route::group(['middleware' => 'auth'], function() {
+    // マイページ
     Route::get('/mypage','MainController@mypage')->name('mypage');
-    Route::get('/logout','MainController@logout')->name('logout');
-
+    
+    // 案件一覧
     Route::get('/jobs','MainController@jobs')->name('jobs');
+    
+    
     Route::get('/jobs/post','MainController@jobPost')->name('jobs.post');
     Route::post('/jobs/post','MainController@postJobPost')->name('post.jobs.post');
-
+    
     Route::get('/message/public','MainController@messagePublic')->name('message.public');
     Route::get('/message/private','MainController@messagePrivate')->name('message.private');
+    
+    // ログイン
+    Route::get('/logout','MainController@logout')->name('logout');
 });
 
 Route::get('/test','TestController@top')->name('test');
